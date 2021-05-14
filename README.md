@@ -4,7 +4,7 @@ Description:
 ### Data:
 
 ### Enviornment:
-
+```
 conda create -n dnnlofienv python=3.7
 conda activate dnnlofienv
 pip install tensorflow==2.3
@@ -13,7 +13,7 @@ conda install -c anaconda matplotlib
 conda install scikit-learn
 pip install keras-tcn
 conda install pandas
-
+```
 
 ### How to Train:
     training occured using Kaggle as well as the Tufts HPC.
