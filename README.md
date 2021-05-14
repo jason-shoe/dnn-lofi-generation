@@ -1,7 +1,11 @@
 # Deep Neural Networks (COMP137) Final Project - Ashwin Swar and Jason Xu
 Description:
 
-### Data:
+### How to Clone:
+'''
+git lfs install
+git lfs clone https://github.com/jason-shoe/dnn-lofi-generation.git
+'''
 
 ### Enviornment:
 ```
