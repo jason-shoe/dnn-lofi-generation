@@ -1,0 +1,40 @@
+Module Name: AE1
+
+Description
+
+Training Set:
+drums - 0 through 9 inclusive
+
+Preprocessing:
+Chunk           - 500
+Input Length    - 20
+Output Length   - 20
+Stride		- 1
+Scaling         - [-1, 1]
+
+Architecture:
+Hidden Layer Size   - 2048
+Num Recurrent Units - 1
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+time_distributed (TimeDistri (None, 20, 2048)          2050048   
+_________________________________________________________________
+lstm (LSTM)                  (None, 2048)              33562624  
+_________________________________________________________________
+repeat_vector (RepeatVector) (None, 20, 2048)          0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 20, 2048)          33562624  
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 20, 1000)          2049000   
+=================================================================
+Total params: 71,224,296
+Trainable params: 71,224,296
+Non-trainable params: 0
+_________________________________________________________________
+
+
+Training Process:
+200 epochs at 0.0001
+200 epochs at 0.00005
